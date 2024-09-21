@@ -1,0 +1,865 @@
+:root {
+    --primary-green: #34e0a1;
+    --secondary-green: #00aa6c;
+    --primary-white: #fff;
+    --secondary-white: #f2f2f2;
+    --primary-black: #000;
+    --secondary-black: #333;
+    --divider-color: #e0e0e0;
+    --primary-food-delivery-bg: #d4dff7;
+    --secondary-food-delivery-bg: #dcc8ff;
+    --primary-food-delivery: #301D49;
+    --secondary-food-delivery: #52327c;
+    --primary-ad-color: #f2ecf9;
+    --primary-cream: #faf1ed;
+    --secondary-cream: #fff7e1;
+    --container-width: 70.2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+.container {
+    max-width: 71rem;
+    margin: 1rem auto 0 auto;
+}
+.divider-line-vert {
+    background-color: var(--divider-color);
+    height: 22px;
+    margin: 0 8px;
+    width: 1px;
+}
+.btn  {
+    border-radius: 24px;
+    padding: 14px 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+.tripadvisor-logo {
+    width: 24px;
+    height: 24px;
+}
+
+/* Slider Styles */
+
+.slider-wrapper {
+    position: relative;
+    margin-right: .3rem;
+    margin-left: .3rem;
+}
+.slider-title-wrapper {
+    margin: 2rem 1.5rem 1rem 1.5rem;
+}
+.slider-title {
+    margin-bottom: 0.5rem;
+}
+.slider {
+    display: flex;
+    gap: 15px;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.slider-img {
+    width: 270px;
+    height: 270px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.slide a {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 270px;
+}
+.slide a > .slider-img-wrapper :hover {
+    opacity: 0.9;
+}
+.slide-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.2rem;
+    color: var(--primary-white);
+    font-size: 30px;
+}
+.slider-caption {
+    margin-top: 0.5rem;
+    font-size: 22px;
+    color: var(--primary-black);
+}
+.slide-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+    fill: var(--secondary-green);
+}
+.slider-point-number {
+    font-size: 15px;
+}
+.arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 42%;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--primary-black);
+    transition: background-color 0.1s ease in, fill 0.1s ease in;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transition: background-color 0.1s ease in, fill 0.1s ease in;
+    -moz-transition: background-color 0.1s ease in, fill 0.1s ease in;
+    -ms-transition: background-color 0.1s ease in, fill 0.1s ease in;
+    -o-transition: background-color 0.1s ease in, fill 0.1s ease in;
+}
+.arrow-wrapper :hover {
+    background-color: var(--primary-black);
+    fill: var(--primary-white);
+}
+.arrow-right {
+    right: -0.9rem;
+}
+.arrow-left {
+    left: -0.9rem;
+}
+
+/* Nav Bar */
+
+.nav-btns-menu {
+    display: none;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn {
+    position: relative;
+    color: var(--primary-black);
+    font-size: 20px;
+}
+.nav-item-dropdown {
+    top: 100%;
+    width: fit-content !important;
+    height: fit-content;
+    padding: 1rem 15px !important;
+}
+.menu-and-home-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.home-btn-img {
+    width: 188px;
+}
+#btns-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem
+}
+.nav-btn button {
+    color: var(--primary-black);
+}
+.region-and-sign-in-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+.region-wrapper :hover {
+    background-color: var(--divider-color);
+}
+.acount-svg {
+    display: none;
+    margin-left: 1rem;
+}
+#sign-in-btn {
+    color: var(--primary-white);
+    background-color: var(--primary-black);
+    margin-left: 1rem;
+}
+
+/* Menu */
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: -29rem;
+    transition: 0.7s all;
+    -webkit-transition: 0.7s all;
+    -moz-transition: 0.7s all;
+    -ms-transition: 0.7s all;
+    -o-transition: 0.7s all;
+}
+.menu-content {
+    width: 24rem;
+    height: 100vh;
+    top: 0;
+    background-color: var(--primary-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    padding: 48px 48px 24px 24px;
+    position: relative;
+    overflow-y: scroll;
+}
+.close-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+}
+.menu-content hr {
+    border: none;
+    border-bottom: 1px solid var(--divider-color);
+}
+#menu-region {
+    margin-bottom: 1rem;
+}
+#menu-region, #menu-region span {
+    display: flex;
+    align-items: center;
+}
+.menu-part li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Main */
+
+.main-title {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.categories {
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+.categories-btns, .categories-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.categories-btns {
+    /* flex-shrink: 0; */
+    overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.categories-btn-wrapper {
+    flex-shrink: 0;
+    padding: 16px;
+}
+/* .categories-btn :after{
+    border-bottom: 2px solid;
+    content: "";
+    display: block;
+    padding-top: 8px;
+    visibility: hidden;
+} */
+
+
+/* Search Box */
+
+.search-box {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--divider-color);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.search-bar-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#search-input {
+    border: none;
+    outline: none;
+    width: 600px;
+}
+.search-btn {
+    background-color: var(--primary-green);
+    margin: 6px;
+}
+.search-bar-divider {
+    display: none;
+}
+.search-box-btn-5 {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.search-box-from-wrapper, .search-box-dest-wrapper {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+    border: 1.5px solid var(--divider-color);
+    padding: 12px;
+    border-radius: 48px;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    -ms-border-radius: 48px;
+    -o-border-radius: 48px;
+}
+.date, .travelers-count {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0 16px;
+    border: 1.5px solid var(--primary-black);
+    height: 48px;
+    border-radius: 48px;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    -ms-border-radius: 48px;
+    -o-border-radius: 48px;
+}
+
+/* Trip Ai */
+
+.food-delivery-container {
+    max-width: 71rem;
+    height: 434px;
+    position: relative;
+    background: linear-gradient(90deg, var(--primary-food-delivery-bg), var(--secondary-food-delivery-bg));
+    margin-top: 3rem;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.food-delivery-container img {
+    width: 100%;
+}
+.food-delivery-content {
+    position: absolute;
+    left: 170px;
+    top: 88px;
+}
+.food-delivery-header {
+    display: flex;
+    align-items: center;
+}
+.food-delivery-header p {
+    color: var(--primary-food-delivery);
+}
+.ai-Travel-btn span {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.food-delivery-title {
+    line-height: 55px;
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: var(--primary-food-delivery);
+}
+.food-delivery-text {
+    line-height: 1.5;
+    font-size: 21px;
+    margin-top: 17px;
+    color: var(--primary-food-delivery);
+}
+.food-delivery-btn {
+    margin-top: 10px;
+    background-color: var(--primary-food-delivery);
+    color: var(--primary-white);
+    width: 213px;
+    margin-top: 1.4rem;
+}
+.food-delivery-btn a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary-white);
+}
+.food-delivery-btn a :hover {
+    background-color: var(--secondary-food-delivery);
+}
+.food-delivery-btn a svg {
+    color: var(--primary-white);
+}
+
+/* Ad 1 */
+
+.ad {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 3.5rem;
+    padding: 2rem 1.5rem 2rem 0;
+    color: var(--primary-black);
+    background-color: var(--primary-ad-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.ad-img-wrapper {
+    rotate: 4deg;
+}
+.ad-img-wrapper img  {
+    max-width: 130px;
+    max-height: 130px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.ad-content {
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.ad-sponser-name {
+    background-color: var(--divider-color);
+    max-width: fit-content;
+    padding: 4px 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.ad-sponser-name span {
+    font-size: 12px;
+}
+.ad-title {
+    font-size: 28px;
+}
+.ad-text {
+    max-width: 728px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.ad-btn-wrapper {
+    align-self: flex-end;
+}
+.ad-btn {
+    transition: background-color 0.1s linear, color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear, color 0.1s linear;
+    -moz-transition: background-color 0.1s linear, color 0.1s linear;
+    -ms-transition: background-color 0.1s linear, color 0.1s linear;
+    -o-transition: background-color 0.1s linear, color 0.1s linear;
+    border: 1px solid var(--primary-black);
+}
+.ad-btn-wrapper :hover {
+    color: var(--primary-white);
+    background-color: var(--primary-black);
+}
+
+/* Explore Section */
+
+.explore-section {
+    margin-top: 2.8rem;
+    padding-bottom: 2.5rem;
+    background-color: var(--primary-cream);
+}
+.explore-section-wrapper {
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.explore-title {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    padding-right: 10px;
+}
+.explore-list {
+    display: flex;
+    gap: 10px;
+}
+.explore-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-content-title h4 {
+    display: flex;
+    max-width: 320px;
+    margin-top: 1rem;
+    color: var(--primary-black);
+    font-size: 23px;
+    line-height: 1.2;
+    text-align: center;
+}
+.explore-content-wrapper{
+    position: relative;
+}
+.explore-img {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.explore-like-btn-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--primary-white);
+    top: 10px;
+    left: 10px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.explore-arrow {
+    top: 48%;
+}
+
+/* Advertisement Section */
+
+.ad-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    background-color: var(--primary-ad-color);
+    padding: 24px 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.ad-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+    height: 350px;
+}
+.ad-section-img-wrapper {
+    max-width: 530px;
+    flex-shrink: 1;
+}
+.ad-section-img {
+    width: 100%;
+}
+.ad-section-sponser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sponser-text {
+    font-size: 17px;
+}
+.sponser-name-link {
+    text-decoration: underline;
+    color: var(--primary-black);
+    font-size: 17px;
+}
+.ad-section-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.ad-section-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.ad-section-btn-content {
+    background-color: var(--primary-black);
+    max-width: 100px;
+    margin: 1.5rem auto;
+}
+.ad-section-btn {
+    color: var(--primary-white);
+}
+.ad-section-btn :hover {
+    opacity: 0.9;
+}
+
+/* Travelers Choice */
+
+.travelers-choice-section {
+    background-color: var(--secondary-cream);
+}
+.travelers-choice-wrapper {
+    display: flex;
+    align-items: center;
+}
+.travelers-choice-content {
+    width: 45%;
+}
+.travelers-choice-title {
+    margin-top: 8px;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+.travelers-choice-text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.travelers-choice-btn {
+    background-color: var(--primary-black);
+    color: var(--primary-white);
+}
+.travelers-choice-btn-wrapper :hover {
+    opacity: 0.98;
+}
+.travelers-choice-img {
+    width: 55%;
+    height: 600px;
+    background: url(../imgs/travelers-choice/travelers-choice-img.png) no-repeat top;
+    background-size: cover;
+    background-position: 0;
+    padding-top: 0;
+}
+
+/* Trend Travels */
+
+.trends-wrapper {
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+}
+.trends-main-title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.trends-secondary-title-wrapper :after {
+    border-bottom: 2px solid;
+    content: "";
+    display: block;
+    padding-top: 8px;
+}
+.trends-secondary-title {
+    width: fit-content;
+    font-size: 1.5rem;
+}
+.trends-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    margin-top: 1.8rem;
+}
+.trends-link {
+    font-size: 18px;
+    color: var(--primary-black);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--primary-cream);
+    padding-bottom: 4rem;
+}
+
+/* Footer First Part */
+
+.footer-first-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem 1rem;
+    line-height: 1.2;
+}
+.footer-first-part h5 {
+    font-size: 21px;
+    margin-bottom: 1rem;
+}
+.footer-first-part li {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+.footer-first-part a {
+    color: var(--primary-black);
+}
+.footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    font-size: 20px;
+}
+.footer-links-app-title {
+    margin-top: 1.2rem;
+}
+.site-link {
+    text-decoration: underline;
+}
+
+/* Footer Second Part */
+
+.footer-second-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.policy-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    width: 60%;
+}
+.policy-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+    margin-top: 1rem;
+}
+.copyright {
+    font-size: 1rem;
+}
+.tripadvisor-logo-footer {
+    width: 40px;
+    height: 40px;
+    align-self: flex-start;
+}
+.policy-link {
+    color: var(--primary-black);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+/* Footer Last Part */
+
+.footer-last-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.footer-last-part-text {
+    margin-top: 1.5rem;
+    width: 66%;
+    line-height: 1.2;
+}
+.footer-region {
+    display: flex;
+    gap: 10px;
+}
+.footer-region-btn {
+    min-width: 180px;
+    border: 2px solid var(--divider-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.footer-region-cash {
+    position: relative;
+}
+.footer-region-country {
+    position: relative;
+}
+.social-media {
+    display: flex;
+    gap: 1.5rem;
+}
+#more-btn {
+    background-color: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+/* Drop Down Menu */
+
+.dropdown-wrapper {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    padding: 15px 1rem;
+    margin-bottom: 12px;
+    background-color: var(--primary-white);
+    box-shadow: 0 2px 54px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.dropdown-item-wrapper :hover {
+    background-color: var(--secondary-white);
+}
+.dropdown-item {
+    width: 138px;
+    padding: 7px 5px;
+    cursor: pointer;
+}
+.footer-region-dropdown {
+    height: 300px;
+    overflow-y: scroll;
+}
